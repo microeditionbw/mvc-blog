@@ -1,3 +1,3 @@
 <?php
-define('URLROOT', 'http://simple-mvc/');
+define('URLROOT', 'http://mvc-blog/');
 define('sitename', 'Блог');

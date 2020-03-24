@@ -1,5 +1,8 @@
 <?php
 return [
-		"" => ["text" => "Главная"],
-		"main/about" => ["text" => "О НАС"]
+	"mainmenu" =>
+	[
+		"" => ["title" => "Главная"],
+		"main/about" => ["title" => "О НАС"]
+	]
 ];

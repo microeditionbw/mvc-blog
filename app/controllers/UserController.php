@@ -12,7 +12,8 @@ class UserController extends Controller
 
 	function actionRegister()
 	{
-		echo "hi register!";
+		$this->view->layout = 'info';
+		$this->view->render("Регистрация");
 		debug($this->view->route);
 	}
 }

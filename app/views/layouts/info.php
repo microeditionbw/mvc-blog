@@ -14,13 +14,7 @@
 					<header id="header">
 						<h1><a href="<?php echo URLROOT; ?>"><?php echo sitename; ?></a></h1>
 						<nav class="links">
-							<ul>
-							<?php $nav = require_once "app/config/navigation.php";
-							foreach ($nav as $key => $value) {
-								echo '<li><a href="'. URLROOT . $key.'">'.$value["text"]."</a></li>";
-							}
-							?>
-							</ul>
+							<ul><?php $nav = new NavController(); $nav->instance();?></ul>
 						</nav>
 
 						<nav class="main">
@@ -50,13 +44,7 @@
 
 						<!-- Links -->
 							<section>
-							<ul class="links">
-								<?php
-								foreach ($nav as $key => $value) {
-									echo '<li><a href="'. URLROOT . $key.'">'.$value["text"]."</a></li>";
-								}
-								?>
-								</ul>
+							<ul class="links"><?php $nav->instance(); ?></ul>
 							</section>
 
 						<!-- Actions -->
